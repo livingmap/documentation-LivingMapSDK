@@ -21,7 +21,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = u'LivingMapSDK Documentation'
+project = u'LivingMapSDK'
 copyright = u'2020, Living Map'
 author = u'Living Map'
 
@@ -161,7 +161,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'LivingMapSDK.tex', u'LivingMapSDK Documentation',
+    (master_doc, 'LivingMapSDK.tex', u'LivingMapSDK',
      u'Living Map', 'manual'),
 ]
 
@@ -171,7 +171,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'livingmapsdk', u'LivingMapSDK Documentation',
+    (master_doc, 'livingmapsdk', u'LivingMapSDK',
      [author], 1)
 ]
 
@@ -182,8 +182,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'LivingMapSDK', u'LivingMapSDK Documentation',
-     author, 'LivingMap', 'LivingMapSDK Documentation',
+    (master_doc, 'LivingMapSDK', u'LivingMapSDK',
+     author, 'LivingMap', 'LivingMapSDK',
      'Miscellaneous'),
 ]
 
