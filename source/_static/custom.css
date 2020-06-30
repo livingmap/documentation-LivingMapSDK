@@ -88,6 +88,10 @@ a:hover {
     margin-bottom: 2rem;
 }
 
+.highlight {
+    background: #f8f8f8;
+}
+
 
 .rst-versions {
     background-color: #17313F;

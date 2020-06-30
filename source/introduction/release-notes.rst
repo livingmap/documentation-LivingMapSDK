@@ -13,12 +13,13 @@ Versioning Scheme
 
 The *LivingMapSDK* follows `Semantic Versioning <https://semver.org/>`_. Major/Minor SDK releases are released on a roughly quarterly basis, whereas Patch releases may be released more frequently. Minor and Patch releases should never contain breaking changes. Guides on how to upgrade from previous versions to new versions will be provided in the :doc:`../introduction/upgrade-guide` section.
 
+Note that due to a number of initial internal releases, the first *public* version of the SDK begins from v10.0.
+
 
 Support Policy
 --------------
 
-For LTS releases, such as LivingMapSDK 5.0, bug fixes are provided for 2 years and security fixes are provided for 3 years. These releases provide the longest window of support and maintenance. For general releases, bug fixes are provided for 6 months and security fixes are provided for 1 year.
-
+For general releases, bug fixes are provided for 6 months and security fixes are provided for 1 year.
 
 +-----------------+--------------------+---------------------+-------------------------+
 | Version         | Release            | Bug Fixes Until     | Security Fixes Until    |

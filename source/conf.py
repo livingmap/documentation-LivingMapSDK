@@ -18,7 +18,6 @@
 
 #import sphinx_rtd_theme
 
-
 # -- Project information -----------------------------------------------------
 
 project = u'LivingMapSDK'
@@ -71,7 +70,7 @@ language = None
 exclude_patterns = []
 
 # The name of the Pygments (syntax highlighting) style to use.
-pygments_style = None
+pygments_style = 'sphinx'
 
 
 # -- Options for HTML output -------------------------------------------------

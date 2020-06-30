@@ -24,7 +24,7 @@ Add a reference to the Maven repository:
 .. code:: groovy
 
     maven {
-        url "http://maven.livingmap.com:8081/artifactory/gradle-dev-local"
+        url "https://maven.livingmap.com/artifactory/gradle-release"
     }
 
 
@@ -33,10 +33,8 @@ Include the SDK as a dependency:
 .. code:: groovy
 
     dependencies {
-        implementation 'livingmap.com:LivingMapSDK:X.Y.Z'
+        implementation 'livingmap.com:LivingMapSDK:10.0.0'
     }
-
-.. attention:: Set ``X.Y.Z`` to be the latest numerical version of the SDK
 
 
 
@@ -57,11 +55,12 @@ Set the ``minSdkVersion`` of the project to ``24``.
 Permissions
 ***********
 
-Implement the ``ACCESS_FINE_LOCATION`` permission in **AndroidManifest.xml** and ensure the user is prompted.
+Implement the ``ACCESS_FINE_LOCATION`` and ``WRITE_EXTERNAL_STORAGE`` permissions in **AndroidManifest.xml** and ensure the user is prompted.
 
 .. code:: xml
 
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
 
 

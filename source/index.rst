@@ -26,8 +26,25 @@ Living Map provides mapping and routing solutions for complex spaces. Developers
    :name: sec-getting-started
 
    getting-started/installation
-   getting-started/retrieving-positions
-   getting-started/map-integration
+
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Positioning
+   :name: sec-positioning
+
+   positioning/retrieving-positions
+
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Mapping
+   :name: sec-mapping
+
+   mapping/integration
+   mapping/routing
+   mapping/event-handling
+   mapping/styling-the-map
 
 
 .. toctree::
@@ -35,7 +52,6 @@ Living Map provides mapping and routing solutions for complex spaces. Developers
    :caption: Support
    :name: sec-support
 
-   FAQ <support/faq>
    support/security
    support/support-desk
 
@@ -45,6 +61,5 @@ Living Map provides mapping and routing solutions for complex spaces. Developers
    :caption: References
    :name: sec-references
 
-   references/exceptions
    references/error-codes
 
