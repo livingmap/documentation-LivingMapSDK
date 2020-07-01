@@ -12,8 +12,8 @@
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
-import os, sys
-sys.path.append(os.path.abspath('./_ext'))
+#import os, sys
+#sys.path.append(os.path.abspath('./_ext'))
 
 #import sphinx_rtd_theme
 
@@ -41,7 +41,7 @@ release = '0.1.0'
 extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.todo',
-    'sphinx_rtd_theme',
+    'sphinx_rtd_theme'
     #'platform-code-wrapper'
 ]
 
