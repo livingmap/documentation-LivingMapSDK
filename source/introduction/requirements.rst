@@ -35,4 +35,4 @@ Hardware
 * GPS (used for outdoor positioning).
 * An active internet connection (either cellular or wi-fi for downloading maps and data).
 
-.. attention:: **Screen orientation** – Only portrait-mode is supported by *LivingMapSDK*. Applications which integrate the SDK must ensure through configuration settings that it is locked to Portrait-mode.
+.. attention:: **Screen Orientation and Mapping** – Only portrait-mode is supported by *LivingMapSDK* when Mapping is used. Applications which integrate the SDK and use Mapping must ensure it is locked to Portrait-mode through its configuration.

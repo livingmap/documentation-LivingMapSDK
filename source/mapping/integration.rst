@@ -5,10 +5,11 @@ Map Integration
     :depth: 2
     :local:
 
-The *LivingMapSDK* provides functionality to integrate a map fragment into an application, and provide positioning directly into the map as a 'blue dot'. The following instructions detail how to include a map within an application.
+The *LivingMapSDK* provides functionality to integrate Mapping into an application, and provide positioning directly onto the map as a 'blue dot'. The following instructions detail how to include a map within an application.
 
 .. note:: Examples below assume that the SDK has already been :doc:`installed </getting-started/installation>` into the application
 
+.. attention:: **Screen Orientation and Mapping** – Only portrait-mode is supported by *LivingMapSDK* when Mapping is used. Applications which integrate the SDK and use Mapping must ensure it is locked to Portrait-mode through its configuration.
 
 Initialising the Map Component
 ------------------------------
@@ -33,17 +34,17 @@ Define a ``LivingMapConfig`` object and populate it with the required parameters
     String backendUrl = "api.livingmap.com/YourMapName/";
 
     /**
-     * Which environment to use [dev/proof/prod]
+     * Which environment to use [dev / proof / prod]
      */
     String environment = "dev";
 
     /**
-     * Whether to display a debug overlay providing sensor values information [true/false]
+     * Whether to display a debug overlay providing sensor values information [true / false]
      */
     boolean debugMode = false;
 
     /**
-     * Whether to render a routing overlay [true/false]
+     * Whether to render a routing overlay [true / false]
      *
      * If your map has been set up to allow routing requests, this parameter will change
      * Map UI when a request is made. An overlay is added showing the approximate time to
@@ -52,7 +53,7 @@ Define a ``LivingMapConfig`` object and populate it with the required parameters
     boolean routingMode = false;
 
     /**
-     * Which sensor method should the SDK use for positioning [LocationSystem.WIFI, LocationSystem.BEACON, LocationSystem.GPS]
+     * Which sensor method should the SDK use for positioning [LocationSystem.WIFI / LocationSystem.BEACON / LocationSystem.GPS]
      */
     LocationSystem locationSystem = LocationSystem.BEACON;
 

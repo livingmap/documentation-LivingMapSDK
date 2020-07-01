@@ -5,7 +5,7 @@ Routing
     :depth: 2
     :local:
 
-The *LivingMapSDK* exposes functionality for plotting a route from a origin to a destination via a list of optional intermediate destinations.
+The *LivingMapSDK* provides functionality for plotting a route on a map, from a origin to a destination via a list of optional intermediate destinations.
 
 .. note::
     This will require the *Routing Capability* to be added to your map. Contact the :doc:`Support Desk </support/support-desk>` for this to be granted
@@ -60,19 +60,38 @@ To route from the current location, register to receive location updates using t
         }
     }
 
-When a route is required, retrieve the origin values from the LivingMapLocation object
+When a route is required, retrieve the origin values from the *LivingMapLocation* object
 
-.. code-block:: java
+.. example-code::
 
-    int destination_easting = 234567;
-    int destination_northing = 234567;
-    int destination_floor = 0;
+    .. code-block:: swift
+        :class: platform platform-ios
 
-    LivingMapSDKManager.sharedInstance().getMapfragment().requestRoute(
-        livingmapLocation.getEasting(),
-        livingmapLocation.getNorthing(),
-        livingmapLocation.getFloor(),
-        destination_easting,
-        destination_northing,
-        destination_floor
-    );
+        int destination_easting = 234567;
+        int destination_northing = 234567;
+        int destination_floor = 0;
+
+        LivingMapSDKManager.sharedInstance().getMapfragment().requestRoute(
+            livingmapLocation.getEasting(),
+            livingmapLocation.getNorthing(),
+            livingmapLocation.getFloor(),
+            destination_easting,
+            destination_northing,
+            destination_floor
+        );
+
+    .. code-block:: java
+        :class: platform platform-android
+
+        int destination_easting = 234567;
+        int destination_northing = 234567;
+        int destination_floor = 0;
+
+        LivingMapSDKManager.sharedInstance().getMapfragment().requestRoute(
+            livingmapLocation.getEasting(),
+            livingmapLocation.getNorthing(),
+            livingmapLocation.getFloor(),
+            destination_easting,
+            destination_northing,
+            destination_floor
+        );
