@@ -70,4 +70,4 @@ The SDK can send custom events to your application via the ``customEvent()`` han
 .. note::
     Contact the :doc:`Support Desk </support/support-desk>` to discuss integrating custom events within your map.
 
-END
+ENDED
