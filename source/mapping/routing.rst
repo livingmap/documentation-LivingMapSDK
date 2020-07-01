@@ -62,7 +62,7 @@ To route from the current location, register to receive location updates using t
 
 When a route is required, retrieve the origin values from the *LivingMapLocation* object
 
-.. example-code::
+.. platform-code::
 
     .. code-block:: swift
         :class: platform platform-ios

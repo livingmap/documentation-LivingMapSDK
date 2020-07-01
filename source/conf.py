@@ -13,7 +13,7 @@
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
 import os, sys
-sys.path.append(os.path.abspath('./_ext/sphinxcontrib'))
+sys.path.append(os.path.abspath('./_ext'))
 
 #import sphinx_rtd_theme
 
@@ -42,7 +42,7 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.todo',
     'sphinx_rtd_theme',
-    'examplecode'
+    'platform-code-wrapper'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
