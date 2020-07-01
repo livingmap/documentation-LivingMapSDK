@@ -42,7 +42,7 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.todo',
     'sphinx_rtd_theme',
-    'platform-code-wrapper'
+    #'platform-code-wrapper'
 ]
 
 # Add any paths that contain templates here, relative to this directory.

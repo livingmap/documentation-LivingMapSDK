@@ -62,9 +62,9 @@ To route from the current location, register to receive location updates using t
 
 When a route is required, retrieve the origin values from the *LivingMapLocation* object
 
-.. platform-code::
 
-    .. code-block:: swift
+
+.. code-block:: swift
         :class: platform platform-ios
 
         int destination_easting = 234567;
@@ -80,7 +80,7 @@ When a route is required, retrieve the origin values from the *LivingMapLocation
             destination_floor
         );
 
-    .. code-block:: java
+.. code-block:: java
         :class: platform platform-android
 
         int destination_easting = 234567;
