@@ -76,13 +76,13 @@
         });
 
 
-        jQuery('.example-code .platform-tab-wrapper li').on('click', function (e) {
+        jQuery('.platform-code .platform-tab-wrapper li').on('click', function (e) {
             e.preventDefault();
 
             let $clicked_tab = jQuery(this);
             let $tabs_wrapper = $clicked_tab.closest('.platform-tab-wrapper');
 
-            let $blocks_wrapper = $clicked_tab.closest('.example-code');
+            let $blocks_wrapper = $clicked_tab.closest('.platform-code');
             let $block_to_select = $blocks_wrapper.find( '.platform-' + $clicked_tab.attr('data-platform') );
 
             $tabs_wrapper.find('li.selected').removeClass('selected');
@@ -92,6 +92,7 @@
             $block_to_select.addClass('selected');
 
         });
+
 
         jQuery('body').addClass('dom-loaded');
     });

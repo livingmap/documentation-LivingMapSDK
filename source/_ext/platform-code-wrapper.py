@@ -4,6 +4,8 @@ from docutils.parsers.rst import Directive
 
 class PlatformCodeWrapper(Directive):
 
+    has_content = True
+
     def run(self):
         self.assert_has_content()
         text = '\n'.join(self.content)
