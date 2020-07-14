@@ -32,7 +32,8 @@ Request a one-off location by using ``requestLocationOneTime()`` from ``LivingMa
 
         LivingMapSDKManager.sharedInstance.requestLocationOneTime(listener: self)
 
-        // TODO – need to expand this like the Android version
+
+.. TODO – need to expand this like the Android version
 
 
 .. caution:: During a one-off location request, if the service has not finished downloading the necessary Wi-Fi grid details, then only a GPS-based location is received. Due to being indoors, this could be significantly less accurate than with the inclusion of the Wi-Fi grid
@@ -66,7 +67,8 @@ Request a location subscription by using ``requestLocationSubscription()`` from 
 
         LivingMapSDKManager.sharedInstance.requestLocationSubscription(listener: self)
 
-        // TODO – need to expand this like the Android version
+
+.. TODO – need to expand this like the Android version
 
 
 Unsubscribe from the Positioning Service
