@@ -44,4 +44,4 @@ You can then test the changes live by opening `_build/html/index.html` in your f
 
 Building and deployments to the [https://docs.livingmap.com](https://docs.livingmap.com) are carried out automatically via a CI/CD process. To deploy an update, simply have changes merged into an appropriate version branch or the `master` branch, then they will be automatically built and deployed within a few minutes. 
 
-To monitor deployments, log into the [Read the Docs account](https://readthedocs.org/projects/).
+To monitor deployments, log into the [Read the Docs account](https://readthedocs.org/projects/). 
