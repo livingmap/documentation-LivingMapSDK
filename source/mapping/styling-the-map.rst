@@ -9,26 +9,47 @@ Styling the Map
 Accessibility
 -------------
 
-The *Map Fragment* supports alternative map styles to aid accessibility. The style can be changed dynamically at run time by passing one of the ``MapStyles`` constants to the ``setMapStyle()`` method on the map control.
+The *Map Component* supports alternative map styles to aid accessibility. The style can be changed dynamically at runtime by passing one of the ``MapStyles`` constants to the ``setMapStyle()`` method on the map control.
 
 .. caution::
     The following should only be called once the map is ready by using the :doc:`Event Handler </mapping/event-handling>`
 
-.. code-block:: java
 
-    LivingMapEvents eventHandler = new LivingMapEvents() {
+.. platform-code::
 
-        /**
-         * Called when the map object has finished loading
-         */
-        @Override
-        public void mapReady() {
-            LivingMapSDKManager.sharedInstance().getMapFragment().setMapStyle(
-                LivingMapConstants.MapStyles.HIGH_CONTRAST
-            );
+    .. code-block:: java
+        :class: platform platform-android
+
+        LivingMapEvents eventHandler = new LivingMapEvents() {
+
+            /**
+             * Called when the map object has finished loading
+             */
+            @Override
+            public void mapReady() {
+                LivingMapSDKManager.sharedInstance().getMapFragment().setMapStyle(
+                    LivingMapConstants.MapStyles.HIGH_CONTRAST
+                );
+            }
+
         }
 
-    }
+    .. code-block:: swift
+        :class: platform platform-ios
+
+        class MapViewController: UIViewController, LivingMapEvents {
+
+            /**
+             * Called when the map object has finished loading
+             */
+            func mapReady() {
+                LivingMapSDKManager.sharedInstance.getLivingMapFragment()?.setMapStyle(
+                    LivingMapConstants.MapStyles.HIGH_CONTRAST
+                )
+            }
+
+        }
+
 
 Supported map styles are:
 

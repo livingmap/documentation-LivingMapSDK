@@ -23,6 +23,20 @@ hr {
     margin-bottom: 0.3em;
 }
 
+.rst-content .toctree-wrapper h2 {
+    font-size: 80%;
+}
+
+.rst-content .toctree-wrapper ul {
+    font-size: 90%;
+    font-weight: 300;
+    margin-bottom: 0;
+}
+
+#contents > h2 {
+    margin-bottom: 0.25rem;
+}
+
 .wy-nav-content h1 a.toc-backref,
 .wy-nav-content h2 a.toc-backref,
 .wy-nav-content h3 a.toc-backref,

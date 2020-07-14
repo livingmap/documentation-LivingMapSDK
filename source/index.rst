@@ -3,12 +3,12 @@
 LivingMapSDK Documentation
 ==========================
 
-.. TODO Update the introduction documentation below...
+Living Map provides mapping and routing solutions for complex spaces in the form of software development kits (SDKs). This documentation details how to integrate and use the *LivingMapSDK* which provides an indoor positioning and route finding system for Android and iOS applications.
 
-PPS Indoor Positioning System into your Android application. The PPS service allows for accurate indoor positioning that is integrated into the LivingMap Map Fragment or can be used stand alone to provide a location object by means of a listener interface.
+The *LivingMapSDK* can be used as either a standalone location object by means of a listener interface, or as a web-based map fragment which can be displayed directly within an application.
 
-
-Living Map provides mapping and routing solutions for complex spaces. Developers can gain access to these technologies through the use of intuitive SDKs (Software Development Kits). This documentation outlines how to access and use these SDKs in your own Android and iOS applications.
+Contents
+--------
 
 .. toctree::
    :maxdepth: 1
@@ -19,33 +19,33 @@ Living Map provides mapping and routing solutions for complex spaces. Developers
    introduction/requirements
    introduction/upgrade-guide
 
-
 .. toctree::
    :maxdepth: 1
    :caption: Getting started
    :name: sec-getting-started
 
-   getting-started/installation
-
+   getting-started/installation-on-android
+   getting-started/installation-on-ios
+   getting-started/configuration
 
 .. toctree::
    :maxdepth: 1
    :caption: Positioning
    :name: sec-positioning
 
+   Initialising <positioning/initialising>
    positioning/retrieving-positions
-
 
 .. toctree::
    :maxdepth: 1
    :caption: Mapping
    :name: sec-mapping
 
-   mapping/integration
+   Initialising on Android <mapping/initialising-on-android>
+   Initialising on iOS <mapping/initialising-on-ios>
    mapping/routing
    mapping/event-handling
    mapping/styling-the-map
-
 
 .. toctree::
    :maxdepth: 1
@@ -55,11 +55,9 @@ Living Map provides mapping and routing solutions for complex spaces. Developers
    support/security
    support/support-desk
 
-
 .. toctree::
    :maxdepth: 1
    :caption: References
    :name: sec-references
 
    references/error-codes
-

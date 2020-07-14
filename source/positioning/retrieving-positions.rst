@@ -5,39 +5,35 @@ Retrieving Positions
     :depth: 2
     :local:
 
-The *LivingMapSDK* provides functionality to retrieve the current position of the device on which the SDK is running. The following instructions detail how to retrieve a one-off position, or a continuous stream of positioning information.
-
-.. note:: Examples below assume that the SDK has already been :doc:`installed </getting-started/installation>` into the application
-
-
-Initialising the Positioning System
------------------------------------
-
-Before using the Positioning System, it requires initialising by calling ``initPositioningSystem()`` from the ``LivingMapSDKManager`` singleton, passing the map URL:
-
-.. code-block:: java
-
-    String mapUrl = "YourMapName.livingmap.com";
-    LivingMapSDKManager.sharedInstance().initPositioningSystem(getApplicationContext(), mapUrl);
-
-.. note:: Contact the :doc:`Support Desk </support/support-desk>` to be granted a Map URL
+.. note:: Examples below assume that the SDK has already been installed into the application, has been :doc:`configured </getting-started/configuration>` correctly, and the Positioning System has been :doc:`initialised </positioning/initialising>`
 
 
 Retrieve a One-Off Position
 ---------------------------
 
-Request a one-off location by using ``requestLocationOneTime()`` from the ``LivingMapSDKManager`` singleton, and pass an instance of ``LivingMapLocationListener`` to handle the response:
+Request a one-off location by using ``requestLocationOneTime()`` from ``LivingMapSDKManager``, and pass an instance of ``LivingMapLocationListener`` to handle the response:
 
-.. code-block:: java
+.. platform-code::
 
-    LivingMapSDKManager.sharedInstance().requestLocationOneTime(new LivingMapLocationListener() {
-        @Override
-        public void locationReceived(LivingMapLocation location) {
-            if (location != null) {
-                Toast.makeText(getApplicationContext(), String.format("Location received: %s", location.toString()), Toast.LENGTH_SHORT).show();
+    .. code-block:: java
+        :class: platform platform-android
+
+        LivingMapSDKManager.sharedInstance().requestLocationOneTime(new LivingMapLocationListener() {
+            @Override
+            public void locationReceived(LivingMapLocation location) {
+                if (location != null) {
+                    Toast.makeText(getApplicationContext(), String.format("Location received: %s", location.toString()), Toast.LENGTH_SHORT).show();
+                }
             }
-        }
-    });
+        });
+
+    .. code-block:: swift
+        :class: platform platform-ios
+
+        LivingMapSDKManager.sharedInstance.requestLocationOneTime(listener: self)
+
+        // TODO – need to expand this like the Android version
+
 
 .. caution:: During a one-off location request, if the service has not finished downloading the necessary Wi-Fi grid details, then only a GPS-based location is received. Due to being indoors, this could be significantly less accurate than with the inclusion of the Wi-Fi grid
 
@@ -50,16 +46,27 @@ Subscribe to the Positioning Service
 
 Request a location subscription by using ``requestLocationSubscription()`` from the ``LivingMapSDKManager`` singleton, and pass an instance of a ``LivingMapLocationListener`` to handle the response:
 
-.. code-block:: java
 
-    LivingMapSDKManager.sharedInstance().requestLocationSubscription(getApplicationContext(), new LivingMapLocationListener() {
-        @Override
-        public void locationReceived(LivingMapLocation location) {
-            if (location != null) {
-                Toast.makeText(getApplicationContext(), String.format("Location received: %s", location.toString()), Toast.LENGTH_SHORT).show();
+.. platform-code::
+
+    .. code-block:: java
+        :class: platform platform-android
+
+        LivingMapSDKManager.sharedInstance().requestLocationSubscription(getApplicationContext(), new LivingMapLocationListener() {
+            @Override
+            public void locationReceived(LivingMapLocation location) {
+                if (location != null) {
+                    Toast.makeText(getApplicationContext(), String.format("Location received: %s", location.toString()), Toast.LENGTH_SHORT).show();
+                }
             }
-        }
-    });
+        });
+
+    .. code-block:: swift
+        :class: platform platform-ios
+
+        LivingMapSDKManager.sharedInstance.requestLocationSubscription(listener: self)
+
+        // TODO – need to expand this like the Android version
 
 
 Unsubscribe from the Positioning Service
@@ -67,17 +74,14 @@ Unsubscribe from the Positioning Service
 
 Request that the location subscription is removed by using ``removeLocationSubscription()`` within the ``LivingMapSDKManager`` singleton:
 
-.. code-block:: java
+.. platform-code::
 
-    LivingMapSDKManager.sharedInstance().removeLocationSubscription();
+    .. code-block:: java
+        :class: platform platform-android
 
+        LivingMapSDKManager.sharedInstance().removeLocationSubscription();
 
+    .. code-block:: swift
+        :class: platform platform-ios
 
-De-initialising the Positioning System
---------------------------------------
-
-When no longer required, it is advised to de-initialise the Positioning System by calling ``deinitPositioningSystem()`` from the ``LivingMapSDKManager`` singleton:
-
-.. code-block:: java
-
-    LivingMapSDKManager.sharedInstance().deinitPositioningSystem(getApplicationContext());
+        LivingMapSDKManager.sharedInstance.removeLocationSubscription(listener: self)

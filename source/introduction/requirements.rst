@@ -17,13 +17,23 @@ Software
 
 *LivingMapSDK* operates on Android and iOS platforms of a specified minimum version (see table below), and up to and including the latest version. Requirements for a particular minimum version may be due to the availability of certain OS APIs that allow access to sensor hardware data.
 
-+------------------------+------------------+-------------------------+------------------+------------------+
-|                        | Minimum Supported Versions                 | Maximum Supported Versions          |
-+------------------------+------------------+-------------------------+------------------+------------------+
-| SDK Version            | iOS              | Android                 | iOS              | Android          |
-+========================+==================+=========================+==================+==================+
-| 10.0                   | 11.0             | 7.0 Nougat (API 24)     | Latest           | Latest           |
-+------------------------+------------------+-------------------------+------------------+------------------+
+Android
+^^^^^^^
+
++------------------------+--------------------------+----------------------------+
+| SDK Version            | Minimum Version          | Maximum Version            |
++========================+==========================+============================+
+| 10.0                   | 7.0 Nougat (API 24)      | Latest                     |
++------------------------+--------------------------+----------------------------+
+
+iOS
+^^^
+
++------------------------+--------------------------+----------------------------+
+| SDK Version            | Minimum Version          | Maximum Version            |
++========================+==========================+============================+
+| 10.0                   | 11.0                     | Latest                     |
++------------------------+--------------------------+----------------------------+
 
 
 Hardware
