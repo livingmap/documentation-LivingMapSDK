@@ -16,19 +16,55 @@ The *LivingMapSDK* follows `Semantic Versioning <https://semver.org/>`_. Major/M
 Note that due to a number of initial internal releases, the first *public* version of the SDK begins from v10.0.
 
 
-Support Policy
---------------
+Releases
+--------
 
-For general releases, bug fixes are provided for 6 months and security fixes are provided for 1 year.
++-------------------------+--------------------+
+| *LivingMapSDK* Version  | Release            |
++=========================+====================+
+| 11.0                    | TBA                |
++-------------------------+--------------------+
+| 10.3 (iOS only)         | 02 November 2021   |
++-------------------------+--------------------+
+| 10.2                    | 03 July 2020       |
++-------------------------+--------------------+
 
-+-----------------+--------------------+---------------------+-------------------------+
-| Version         | Release            | Bug Fixes Until     | Security Fixes Until    |
-+=================+====================+=====================+=========================+
-| 10.0            | 03 July 2020       | 03 February 2021    | 03 July 2021            |
-+-----------------+--------------------+---------------------+-------------------------+
+For release compatibility with OS platforms and device hardware, see :doc:`requirements`.
 
 
-LivingMapSDK 10.0
------------------
 
-This was the initial documented release of LivingMapSDK.
+----------
+
+
+
+LivingMapSDK 11.0
+^^^^^^^^^^^^^^^^^
+
+TBA
+
+
+
+----------
+
+
+
+
+LivingMapSDK 10.3
+^^^^^^^^^^^^^^^^^
+
+Updates to account for changes to iOS/Xcode toolchain requirements due to the release of Apple's M1 chip and iOS 13. No functional changes have taken place in this release.
+
+
+
+----------
+
+
+
+LivingMapSDK 10.2
+^^^^^^^^^^^^^^^^^
+
+This was the initial public release of *LivingMapSDK*.
+
+
+
+

@@ -7,4 +7,12 @@ Upgrade Guide
     :depth: 2
     :local:
 
-No upgrade guide required for LivingMapSDK 10.0.
+
+Releases
+--------
+
+
+LivingMapSDK 11.0
+^^^^^^^^^^^^^^^^^
+
+TBA

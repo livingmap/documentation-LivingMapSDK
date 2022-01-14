@@ -4,6 +4,8 @@ This repository contains the source files of the documentation for the [LivingMa
 
 Content is coded in reStructuredText markup language (reST) and are parsed with the [Sphinx](https://www.sphinx-doc.org/) documentation builder. These documents are then publically hosted on [Read the Docs](https://readthedocs.org/).
 
+---
+
 ## Contributing changes
 
 **Pull Requests should use the `master` branch by default. Only make Pull Requests against other branches (e.g. `2.1` or `3.0`) if your changes only apply to that specific version of the respective SDK.**
@@ -25,13 +27,27 @@ You should then add your page to the relevant "toctree" in `source/index.rst`.
 Check Sphinx's [reST Primer](https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html) for details on the syntax, or see how things are done in existing pages and adapt it to your needs.
 
 
+---
+
+
 ## Building with Sphinx
 
 To build the HTML website (or any other format supported by Sphinx, like PDF, EPUB or LaTeX), you need to install [Sphinx](https://www.sphinx-doc.org/) >= 3.1.
 
-Instructions to install are available from the [Sphinx](https://www.sphinx-doc.org/en/master/usage/installation.html) website.
+Instructions to install are available from the [Sphinx](https://www.sphinx-doc.org/en/master/usage/installation.html) website. If using Homebrew on a Mac, the command will likely be:
 
-Once installed, you can then build the HTML documentation from the root folder of this repository with:
+```sh
+brew install sphinx-doc
+```
+
+Once Sphinx is installed, you will need to install the theme by:
+
+```sh
+pip install sphinx_rtd_theme
+```
+<small>\* if `pip` doesnt' work, try `pip3`</small>
+
+Finally, you can then build the HTML documentation from the root folder of this repository with:
 
 ```sh
 make html
@@ -40,8 +56,11 @@ make html
 You can then test the changes live by opening `_build/html/index.html` in your favorite browser.
 
 
+---
+
+
 ## Deploying to https://docs.livingmap.com
 
 Building and deployments to the [https://docs.livingmap.com](https://docs.livingmap.com) are carried out automatically via a CI/CD process. To deploy an update, simply have changes merged into an appropriate version branch or the `master` branch, then they will be automatically built and deployed within a few minutes. 
 
-To monitor deployments, log into the [Read the Docs account](https://readthedocs.org/projects/). 
+To monitor deployments, log into the [Read the Docs account](https://readthedocs.org/projects/). Access to 

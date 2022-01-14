@@ -325,6 +325,11 @@ a:hover {
     font-weight: bold;
 }
 
+.rst-content .section .contents.local ul li li a {
+    color: #013C4F;
+    font-weight: normal;
+}
+
 .rst-content .section .contents.local ul li:before {
     color: #FA6600;
     content: "#";
