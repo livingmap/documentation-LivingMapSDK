@@ -19,7 +19,7 @@ sys.path.append(os.path.abspath('./_ext'))
 # -- Project information -----------------------------------------------------
 
 project = u'LivingMapSDK'
-copyright = u'2020, Living Map'
+copyright = u'2022, Living Map'
 author = u'Living Map'
 
 # The short X.Y version
