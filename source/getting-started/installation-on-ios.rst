@@ -5,14 +5,14 @@ Installation on iOS
     :depth: 2
     :local:
 
-This page will outline how to install the *LivingMapSDK* into an iOS application.
+This page will outline how to install the *LivingMapAviationAccelerator* (LMAA) into an iOS application.
 
 
 Versions
 --------
 
-| Latest and stable : 10.3.7
-| Stable: 10.3.6
+| Latest : 11.2.1
+| Stable : 11.2.0
 
 
 Settings
@@ -25,12 +25,6 @@ Set the platform version (i.e. the minimum compatible iOS version) of the projec
     platform :ios, '13.1'
 
 
-
-SDKs Dependencies
-------------------
-
--  Alamofire v5.4.3
--  SwiftProtobuf
 
 CocoaPods
 --------------
@@ -56,27 +50,14 @@ Point to the latest version:-
 .. code:: ruby
 
        pod 'LivingMapSDK'
-       pod 'LivingMapLiveSDK'
        pod 'AirlineAccelerator'
 
 Point to the specific version (recommended):-
 
 .. code:: ruby
 
-       pod 'LivingMapSDK', '10.3.7'
-       pod 'LivingMapLiveSDK', '10.3.7'
-       pod 'AirlineAccelerator', '10.3.7'
-
-Add SDK Pod Dependencies
-
-for version 10.3.7 :
-
-add the following dependecies in your project ``podfile``
-
-.. code:: ruby
-
-       pod 'Alamofire', '5.4.3'
-       pod 'SwiftProtobuf'
+       pod 'LivingMapSDK', '11.2.1'
+       pod 'AirlineAccelerator', '11.2.1'
 
 Carthage
 --------------
@@ -91,26 +72,15 @@ Point to the latest version:-
 .. code:: ruby
 
    binary "https://raw.githubusercontent.com/livingmap/LivingMap/main/LivingMapSDK.json"
-   binary "https://raw.githubusercontent.com/livingmap/LivingMap/main/LivingMapLiveSDK.json"
    binary "https://raw.githubusercontent.com/livingmap/LivingMap/main/AviationAccelerator.json"
 
 Point to the specific version (recommended):-
 
 .. code:: ruby
 
-   binary "https://raw.githubusercontent.com/livingmap/LivingMap/main/LivingMapSDK.json" == 10.3.7
-   binary "https://raw.githubusercontent.com/livingmap/LivingMap/main/LivingMapLiveSDK.json" == 10.3.7
-   binary "https://raw.githubusercontent.com/livingmap/LivingMap/main/AviationAccelerator.json" == 10.3.7
+   binary "https://raw.githubusercontent.com/livingmap/LivingMap/main/LivingMapSDK.json" == 11.2.1
+   binary "https://raw.githubusercontent.com/livingmap/LivingMap/main/AviationAccelerator.json" == 11.2.1
 
-Add SDK Carthage Dependencies
-
-for version 10.3.7 : add the following dependecies in your project
-``Cartfile``
-
-.. code:: ruby
-
-       github "Alamofire/Alamofire" == 5.4.3
-       github "apple/swift-protobuf"
 
 to download the dependecies use the following command in the project
 deirectory
@@ -147,9 +117,8 @@ adding LivingMapSDKs as a dependency can be done through Xcode:
    in the search
 -  add the livingMap package to your project and you are all set
 
-### Permissions
-
----
+Permissions
+-----------------------
 
 Ensure your app implements `Location Updates` capability and prompts the user for `Location Permissions`.
 

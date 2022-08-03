@@ -5,7 +5,7 @@ Installation on Android
     :depth: 2
     :local:
 
-This page will outline how to install the *LivingMapSDK* into an Android application.
+This page will outline how to install the *LivingMapAviationAccelerator* (LMAA) into an Android application.
 
 
 Dependencies
@@ -27,22 +27,29 @@ Include the SDK as a dependency:
 .. code:: groovy
 
     dependencies {
-        implementation 'livingmap.com:LivingMapSDK:10.0.+'
+        implementation 'livingmap.com:LivingMapAviationAccelerator:11.0.2'
     }
 
 
 Settings
 --------
 
-Set the ``minSdkVersion`` of the project to ``24``.
+Set the ``minSdkVersion`` of the project to ``29``.
 
 .. code:: groovy
 
     android {
         defaultConfig {
-            minSdkVersion 24
+            minSdkVersion 29
         }
     }
+
+In order to support Android APi 28 and above the SDKs have been compiled with the AndroidX support library flags. 
+Enable the following in your gradle.properties file
+
+.. code:: groovy
+    android.useAndroidX=true
+    android.enableJetifier=true
 
 
 .. attention:: **Screen Orientation and Mapping** – Only portrait-mode is supported by *LivingMapSDK* when Mapping is used. Applications which integrate the SDK and use Mapping must ensure it is locked to Portrait-mode through its configuration.
@@ -57,5 +64,8 @@ Implement the ``ACCESS_FINE_LOCATION`` and ``WRITE_EXTERNAL_STORAGE`` permission
 
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" />
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+
 
 .. attention:: **Screen Orientation and Mapping** – Only portrait-mode is supported by *LivingMapSDK* when Mapping is used. Applications which integrate the SDK and use Mapping must ensure it is locked to Portrait-mode through its configuration.
