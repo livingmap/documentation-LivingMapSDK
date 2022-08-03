@@ -11,7 +11,6 @@ To use these events, you need to create an instance of a LivingMapMappingEvents 
 
 Create an instance of LivingMapMappingEvents and override the required methods:
 
-
 .. platform-code::
 
     .. code-block:: java

@@ -6,10 +6,13 @@ Event Recovery
     :local:
 
 
-In the event of a serious unrecoverable problem the user will be presented with
-an error dialog:
+In the event of a serious unrecoverable problem the user will be presented with an error dialog with the follwoing options:
+
+- Try Again: 
 
 Pressing Try Again will result in the AviationAccelerator attempting to recover. 
+
+- Exit: 
 
 Pressing Exit will raise an error callback via the errorReceived() handler in the
 LivingMapMappingEvents interface.  
