@@ -50,14 +50,14 @@ Point to the latest version:-
 .. code:: ruby
 
        pod 'LivingMapSDK'
-       pod 'AirlineAccelerator'
+       pod 'AviationAccelerator'
 
 Point to the specific version (recommended):-
 
 .. code:: ruby
 
        pod 'LivingMapSDK', '11.2.1'
-       pod 'AirlineAccelerator', '11.2.1'
+       pod 'AviationAccelerator', '11.2.1'
 
 Carthage
 --------------

@@ -89,3 +89,6 @@ Calibration of a device is handled by the AviationAccelerator however it is the 
 The LivingMapMappingEvents provides a callback with UI that should be displayed when the event fires.
 The logic for removing the display is then handled within the AviationAccelerator.
 Calibration is only required when running the AviationAccelerator on a physical device. As a result no event is returned if running on an emulator.
+
+If the cancel button is selected, then the SDK will rely on the device's own calibrated sensor values, whose quality varies by device and whether the phone has been online long enough to self-calibrate successfully.
+It is recommended that the user is encouraged to perform calibration at this stage.

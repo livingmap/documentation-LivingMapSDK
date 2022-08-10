@@ -19,17 +19,52 @@ Note that due to a number of initial internal releases, the first *public* versi
 Releases
 --------
 
-+-------------------------+--------------------+
-| *LivingMapSDK* Version  | Release            |
-+=========================+====================+
-| 11.0                    | TBA                |
-+-------------------------+--------------------+
-| 10.3 (iOS only)         | 02 November 2021   |
-+-------------------------+--------------------+
-| 10.2                    | 03 July 2020       |
-+-------------------------+--------------------+
++------------------------+------------------+
+| *LivingMapSDK* Version | Release          |
++========================+==================+
+| 11.2.1                 | 27 July 2022     |
++------------------------+------------------+
+| 11.2                   | 21 June 2022     |
++------------------------+------------------+
+| 11.1                   | 27 April 2022    |
++------------------------+------------------+
+| 11.0                   | 10 March 2022    |
++------------------------+------------------+
+| 10.3 (iOS only)        | 02 November 2021 |
++------------------------+------------------+
+| 10.2                   | 03 July 2020     |
++------------------------+------------------+
 
 For release compatibility with OS platforms and device hardware, see :doc:`requirements`.
+
+
+----------
+
+
+
+LivingMapSDK 11.2.1
+^^^^^^^^^^^^^^^^^
+
+- Update live reporting system 
+
+
+----------
+
+
+
+LivingMapSDK 11.2
+^^^^^^^^^^^^^^^^^
+
+- Update Routing system 
+
+----------
+
+
+
+LivingMapSDK 11.1
+^^^^^^^^^^^^^^^^^
+
+- Remove system external dependecies
 
 
 
@@ -40,7 +75,7 @@ For release compatibility with OS platforms and device hardware, see :doc:`requi
 LivingMapSDK 11.0
 ^^^^^^^^^^^^^^^^^
 
-TBA
+- Update positioning system to magnetic assisted
 
 
 
@@ -52,7 +87,7 @@ TBA
 LivingMapSDK 10.3
 ^^^^^^^^^^^^^^^^^
 
-Updates to account for changes to iOS/Xcode toolchain requirements due to the release of Apple's M1 chip and iOS 13. No functional changes have taken place in this release.
+- Updates to account for changes to iOS/Xcode toolchain requirements due to the release of Apple's M1 chip and iOS 13. No functional changes have taken place in this release.
 
 
 
@@ -63,7 +98,7 @@ Updates to account for changes to iOS/Xcode toolchain requirements due to the re
 LivingMapSDK 10.2
 ^^^^^^^^^^^^^^^^^
 
-This was the initial public release of *LivingMapSDK*.
+- This was the initial public release of *LivingMapSDK*.
 
 
 

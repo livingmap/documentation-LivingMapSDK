@@ -26,7 +26,7 @@ An example implementation of the error handling using the errorReceived callback
     .. code-block:: java
         :class: platform platform-android
 
-        Handling the error object from the AirlineAccelerator
+        Handling the error object from the Aviation Accelerator
             public func errorReceived(error: LivingMapError) {
                 NSLog("Error Received: %@", error.errorMessage)
 
@@ -47,7 +47,7 @@ An example implementation of the error handling using the errorReceived callback
                                       error.getErrorMessage()));
 
                 if (error.getSeverity() != LivingMapError.LivingMapErrorSeverity.Warning)     {
-                    // Stop the AirlineAccelerator
+                    // Stop the AviationAccelerator
                     lmaaManager.stop(MainActivity.this);
                 }
             }

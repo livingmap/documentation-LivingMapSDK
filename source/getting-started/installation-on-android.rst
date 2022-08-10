@@ -27,7 +27,7 @@ Include the SDK as a dependency:
 .. code:: groovy
 
     dependencies {
-        implementation 'livingmap.com:LivingMapAviationAccelerator:11.0.2'
+        implementation 'livingmap.com:LivingMapAviationAccelerator:11.2.0'
     }
 
 

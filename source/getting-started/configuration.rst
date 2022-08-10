@@ -48,16 +48,15 @@ Define a ``LMAAConfig`` object and populate it with the required parameters:
 
         final HashMap<String, Object> customParameters = new HashMap<>();
         customParameters.put("pnrNumber", "YOUR PNR NUMBER HERE");
-        mapDesignator = new MapDesignator(airportIataCode, terminalCode)
 
         LMAAConfig lmaaConfig = new LMAAConfig.Builder()
-       .mapDesignator(selectedAviationAcceleratorMap)
+       .mapDesignator(new MapDesignator(airportIataCode, terminalCode))
        .mapContainerId(R.id.mapPlaceholder)
        .authenticationParameters(
                new AuthenticationParameters(
-                       BuildConfig.AIRLINE_ACCELERATOR_ENVIRONMENT,
-                       BuildConfig.AIRLINE_ACCELERATOR_CLIENT_ID,
-                       BuildConfig.AIRLINE_ACCELERATOR_CLIENT_SECRET
+                       BuildConfig.AVIATION_ACCELERATOR_ENVIRONMENT,
+                       BuildConfig.AVIATION_ACCELERATOR_CLIENT_ID,
+                       BuildConfig.AVIATION_ACCELERATOR_CLIENT_SECRET
                )
        )
        .friendlySessionName("friendlySessionName")
